@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -20,13 +21,13 @@
             det er basically en container, som tar information fra
             eg. style.css og velger hvor det skal applyes.
             Den bruker class og id.
-            \n
+            <br>
             Hva er class og Id?
-            \n
+            <br>
             det er labels som html elmenter kan equippe for å kjennes igjen av andre elementer
-            \n
+            <br>
             class er generisk. id er specific. det bestemmer hvilken karakteristikker i hvilken gruppe overrider den andre under konflikt
-            \n
+            <br>
             og det betyr at du i praksis ikke skal bruke id flere ganger.
 
 
@@ -46,7 +47,7 @@
             hva bruker justify content? Det er også for alignment.
             align items er for vertical? 
             justify er horizontal?
-            \n
+            <br>
             direction bestemmer hoved axen, som flipper justify/ alignment tolkningen
 
         </p>
@@ -72,66 +73,82 @@
         </h4>
         <p>
             Core idea: visual note-taking app
-            \n
+            <br>
             functionality:
             you create cards with titles, tags, and content
             the notes can have relationships with customizable weight.
-            the relationships decide how closely they spawn on loading, as well as when panning around.
+            the relationships decide how closely they spawn on loading, as well as when panning around. 
+            <br><br>
             relationships are shown with synaptic looking links. only shown after hover over a card
             clicking and holding a link-node and scrolling changes the weight.
             if cards overlap, clicking and holding while scrolling changes layer.
-
+            <br><br>
             need a selection system. multiple options:
             Box selection. Classic windows.
             Circle selector: drags a circle that grabs objects it moves across.
             Use bullet hell rules where only the very centre of the cards are valid for selection.
             Visual component for the selection tool.
-
+            <br><br>
             Some sort of scope selection... in case you don't want all kinds notes that are completely irrelevant.
             Again, the relevancy display could have a slider. or settings for strictness.
             You could also promote users setting signifiers for generic and specific tags.
             That way you can also cull tags based on those characteristics.
             And again, you can maybe even weight the tags themselves for initializing relationships. 
-
+            <br><br>
             Problems: 
+            <br><br>
             1) how to prioritize custom relationships vs, generated ones?
             popup for selection of which notes to keep / change.
             Suggestions for relationships as well?
-
-            2) Algorithm for card spawning.
-            considerations:
+            <br><br>
+            2) Algorithm for card spawning. <br>
+            considerations: <br>
             a) Title. Highest priority?
-            b) generic tags - higher than specific? not necessarily
-            c) 
-
+         <br>   b) generic tags - higher than specific? not necessarily
+       <br>     c) hidden tags?
+       <br>     d) tag suggestions.
+            <br><br>
             Maybe an AI can predict people's preferences.
             take and use feedback. I still need to decide on what elements are relevant.
             the AI could read the content and make more accurate predictions than we can, though.
-
+            <br><br>
             d) there needs to be a tag-manager panel. Where you also ignore
-
+            <br><br>
             additional functionality:
+            <br><br>
             1) Card grouping:
+            <br><br>
             you can group cards as you want, which would function as a separate taggin system.
             but it would show up as folders with added functionality. possibly sharing.
+            <br><br>
             2) Then you can also make collab groups.
             in collab groups notes you make are tagged with your own name. probably your own group.
             the notes could have different color text if multiple people have multiple notes.
             evt. they could have 
-
+            <br><br>
             3) Web-link usage?
             can take 
-
+            <br><br>
             4) Project cards
             Instead of a normal note card, it can take an entire webpage...? Or a whole document.
             and it then works as a mind-map, as well.
+            <br><br>
             5) security and accessibility 
             cards can be locked and and have invitation requirements. As well the groups and documents.
-
+            <br><br>
             6) "Web search" notes.
             cooperation with other websites can allow cards to show up based on relevancy.
             Or if we're big ol' meanies, as ads
-
+            <br><br>
+            Brainstorming
+            <br><br>
+            using it with the project cards, you can use the bounty system, I've been thinking of
+            <br>
+            meaning you tag a task with a bounty for people to accept.
+            it should have limited authorship so that the person in charge can set the bounty state
+            then people signing up for the bounty leave their card open for editting/acceptance
+            <br>
+            
         </p>
     </div>
 
