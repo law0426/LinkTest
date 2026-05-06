@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kowtify app knowts</h1>
+    <h2><a href="index.html">go back</a> </h2>
+    <h3>note on notes: I have more. Will collect later.</h3>
+        <p>
+            Core idea: visual note-taking app
+            <br>
+            functionality:
+            you create cards with titles, tags, and content
+            the notes can have relationships with customizable weight.
+            the relationships decide how closely they spawn on loading, as well as when panning around. 
+            <br><br>
+            relationships are shown with synaptic looking links. only shown after hover over a card
+            clicking and holding a link-node and scrolling changes the weight.
+            if cards overlap, clicking and holding while scrolling changes layer.
+            <br><br>
+            need a selection system. multiple options:
+            Box selection. Classic windows.
+            Circle selector: drags a circle that grabs objects it moves across.
+            Use bullet hell rules where only the very centre of the cards are valid for selection.
+            Visual component for the selection tool.
+            <br><br>
+            Some sort of scope selection... in case you don't want all kinds notes that are completely irrelevant.
+            Again, the relevancy display could have a slider. or settings for strictness.
+            You could also promote users setting signifiers for generic and specific tags.
+            That way you can also cull tags based on those characteristics.
+            And again, you can maybe even weight the tags themselves for initializing relationships. 
+            <br><br>
+            Problems: 
+            <br><br>
+            1) how to prioritize custom relationships vs, generated ones?
+            popup for selection of which notes to keep / change.
+            Suggestions for relationships as well?
+            <br><br>
+            2) Algorithm for card spawning. <br>
+            considerations: <br>
+            a) Title. Highest priority?
+         <br>   b) generic tags - higher than specific? not necessarily
+       <br>     c) hidden tags?
+       <br>     d) tag suggestions.
+            <br><br>
+            Maybe an AI can predict people's preferences.
+            take and use feedback. I still need to decide on what elements are relevant.
+            the AI could read the content and make more accurate predictions than we can, though.
+            <br><br>
+            d) there needs to be a tag-manager panel. Where you also ignore
+            <br><br>
+            additional functionality:
+            <br><br>
+            1) Card grouping:
+            <br><br>
+            you can group cards as you want, which would function as a separate taggin system.
+            but it would show up as folders with added functionality. possibly sharing.
+            <br><br>
+            2) Then you can also make collab groups.
+            in collab groups notes you make are tagged with your own name. probably your own group.
+            the notes could have different color text if multiple people have multiple notes.
+            evt. they could have 
+            <br><br>
+            3) Web-link usage?
+            can take 
+            <br><br>
+            4) Project cards
+            Instead of a normal note card, it can take an entire webpage...? Or a whole document.
+            and it then works as a mind-map, as well.
+            <br><br>
+            5) security and accessibility 
+            cards can be locked and and have invitation requirements. As well the groups and documents.
+            <br><br>
+            6) "Web search" notes.
+            cooperation with other websites can allow cards to show up based on relevancy.
+            Or if we're big ol' meanies, as ads
+            <br><br>
+            Brainstorming (AKA unsorted)
+            <br><br>
+            using it with the project cards, you can use the bounty system, I've been thinking of
+            <br>
+            meaning you tag a task with a bounty for people to accept.
+            it should have limited authorship so that the person in charge can set the bounty state
+            then people signing up for the bounty leave their card open for editting/acceptance
+            <br>
+            that way it's clear for everyone who's on the project, but it can be left open to freelancers.
+
+            <br><br>
+            zoom level should probably also decide detail level: if you're zoomed in, you start seeing more granular information
+            eg. more tags overall. less that are immediately relevant and more "comment" cards.
+            <br>
+            the way I'm imagining it, it's browsable on phones, but its value is in screen realestate usage.
+            plus the quick intuitive interaction with a proper interface instead of fatfingering everything
+            <br>
+            speaking of; you should be able to "lock" cards so they don't leave the screen.
+            that way you can drift, and keep browsing, and still keep parts you find important.
+            <br>
+            you probably also want to hide tags that aren't relevant. or lower search relevance.
+            <br><br>
+            on the topic of phone functionality, you should at least be able to make note cards for later.
+            but having even one card on the phone would probably take up the whole screen
+            <br>
+            maybe also do an "area lock" where things closely relevant are kept on the canvas.
+            <br><br>
+            Added compatability?
+            One thing that could be really useful is if it could read local files.
+            sometimes I've take notes or written something but I can't find where.
+            by making this data network, finding those things should be way easier.
+            But making it retroactively function would also be nice.
+            maybe be able to select files or folder you want it to work with.
+            <br><br>
+            maybe you want to make a connection but you can't think of a tag
+            maybe the program can suggest one for you. along with level of relevancy
+            <br>
+            the caching needs to be smart. just because something is off screen doesn't mean it doesn't exist.
+            <br><br>
+            how does this look when you first start up?
+            <br><br>
+            empty canvas? ask if you want to load an old canvas or start a new one.
+            maybe pick if you want to include online cards?
+            can also start with a search. slider for specificity.
+            I imagine a box to the left for canvas and card management.
+            <br><br>
+            when you've selected a card, you can rate the weight of tags.
+            there might also be greyed out/darkened suggested tags.
+            the tags might be sorted by category. and/or color coded.
+            Maybe there's image/thumbnail options? like before content is readable
+            the card is just replaced with a thumbnail. could probably have
+            a dynamic / selectable threshhold.
+            <br>
+            The canvas-lock option. even though it should probably be on the card itself, too.
+            <br><br>
+            speaking, of canvas locking. that means the relative distance
+            needs to override the relatedness bias. Technically not a problem, as
+            the relatedness should only affect initial spawn.
+            But for that there should be an anchor card for relatedness. 
+            <br>
+            But when you don't have one to begin with. it probably creates a 
+            dummy card with your search elements.
+            Actually. pretty good idea. to start the search, you just have a search card.
+
+
+            <br><br>
+            and when you haven't selected a card. or click a different tab.
+            you can do the canvas related modifications. with a dynamic tag list
+            and you can interact with them in different ways. make them the new search topic.
+            ignore those tags completely (relevant for comments).
+            increase or lower importance.
+            set search range: as in, how many cards to spawn related to tag.
+            <br><br>
+            relevancy is a bit of a weird term, but it should be intuitive.
+            if some tags are often grouped together, then they're naturally relevant.
+            therefore, the search radius can include cards with tags that don't have the original search tag
+            but is within the same grouping logic. this is decided by specificity.
+            even with almost no specificity, you probably still have to scroll far away
+            for the least relevant once to show up.
+            <br><br>
+            but then there's "high specificity, low relevance"
+            which is how I would describe, for example, a comment on a specific Card.
+            Just because it's there, doesn't mean it's interesting. so there needs to be
+            an additional axis for filtering.
+            <br><br>
+            How do I describe it? Upward relevance?
+            <br>
+            A comment is always relevant to the card.
+            But the card isn't always relevant to the comment.
+            I guess it could be described as depth, which is why I
+            associate it with zooming in.
+            This would also include things like subcategories.
+            <br>
+            eg: cells more often related to biology
+            but biology isn't specifically about cells.
+            <br><br>
+            this is a metric. if one tag is always found with another.
+            ... Then that related tag is more likely a 'parent tag'.
+            Especially, if the other tag
+            <br><br>
+            I can describe this metric as "mutuality" or the inverse: "exclusivity"
+            the metric itself is a bias.
+            The more mutuality two tags have, the less depth between them.
+            Then there's the "relatedness" bias. which is tag weight overlap.
+            The more relatedness the closer along the X/Y axis they are.
+            <br><br>
+            hell yeah. 
+            But then there's additional subjective value that we could possibly account for.
+            Which should probably be a canvas setting.
+            <br> this part's way more web browser relevant.
+            <br> but you can maybe have a "seriousness/entertainment" axis.
+            and then a rating system for each element. Maybe for both cards and tags?
+            the amount of nuance could be infinite, unfortunately.
+            but another axis is "vapid vs informative"? for those who want content of substance.
+            "rigid vs emotional" for those who want unbiased news.
+            The system could even suggest balances based on engagement history.
+            <br><br>
+            if you wanna get real fancy with it, you could have a listening AI
+            that you can talk to in order to change settings while keeping your
+            hands free. 
+            <br><br>
+            back to mutuality:
+            how is it calculated? take the number of cards with one of the tags.
+            and compare it to the number of cards with both of the tags.
+            if you are searching for both tags. or make a card with those tags
+            the anchor card, then this "flattens" the search to that depth.
+            now the cards with the more general tags are pushed into the background.
+            <br><br>
+            don't forget tag weighting:
+            something can have varying relevance WITHIN a tag.
+            an article can technically be about biology, but still only 2/10
+            in terms of subject depth and relativity.
+            <br><br>
+            it might be a good idea to have relationship overrides.
+            or at least a system built-in understanding of it.
+            eg: if an article is 10/10 about cells, it should be 10/10 about biology.
+            due to the categorical relationship.
+            But then again, cells don't cover biology as a whole...
+            but this isn't about covering 100% of the content.
+            but about content being 100% relevant to a tag.
+            <br><br>
+            lol. if an article uses a metaphor using a car, should cars be included into the tags?
+            maybe at a 1/10 relevance? 
+            use shading/contrast as a visual indicator for relevance.
+            that's good for screen realestate, but a slider would be clearer.
+            maybe display slider only on-hover?
+            I could technically use like a bar system by having a mask on the font.
+            and then display eg 5/10 bars through the letters. 
+            depending on the letter, very little of the bars, and therefore, clarity
+            could be should.
+            <br><br>
+            on the topic of links:
+            <br><br>
+            Links are like a unique tag between two cards than can be used to tighten a relationship
+            but 
+
+        </p>
+
+</body>
+</html>
